@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$fontHeader: 'Fjalla One', sans-serif;
+$fontBody: 'Open Sans', sans-serif; 
+$fontSpecial: 'Courgette', cursive;
+$fontColor:#262626;
+$hoverColor:#c59d5f;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px; /* adjust to navbar height */
+}
+.oneSection{
+    background-image: url('../images/bg_17.jpg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+/* Default (at top) */
+#mainNavbar {
+  transition: all 0.3s ease;
+//   background: transparent;
+  /* When scrolled */
+
+}
+.navbar-scrolled {
+  background-color:#262626dc; /* white background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.664);
+  transition: all 0.3s ease;}
+
+
+
+
+
+    .navbar-toggler {
+        background-color: transparent;
+        border: 1px solid #ddd; /* optional border */
+    }
+
+    .one{
+        .navList{
+            ul{
+                
+                li a{
+                    color: white;
+                    text-decoration: none;
+                    font-family: $fontHeader; 
+                    font-size: 14px;
+                    letter-spacing: 1px;
+            }
+            li a:hover{
+                color: $hoverColor;
+                transition: 1s;
+            }
+            }
+        }
+    }
+    .two{
+        min-height: 70vh;
+        .twoContent{
+            h1{
+                font-family: $fontHeader;
+                font-size: 50px;
+                // font-family: $fontHeader;
+                // font-size: 50px;
+                color: white !important;
+            }
+            p{
+                font-family: $fontSpecial;
+                font-size: 18px;
+                color: white;
+                letter-spacing: 5px;
+                line-height: 28px;
+            }
+            .btnTwo{
+                background-color: transparent;
+                border: 2px solid $hoverColor;
+                padding: 10px 20px;
+                font-size: 15px;
+                font-weight: 500;
+                cursor: pointer;
+                font-family: $fontBody;
+                // font-weight: 600;
+
+                a{text-decoration: none; color: $hoverColor;}
+            }
+            .btnTwo:hover{
+                a{
+                    color: white;
+                }
+                background-color: $hoverColor;
+                color:white;
+
+                transition: 1s;
+            }
+            .rotating-text {
+                position: relative;
+                height: 100px; /* reserve space for one h1 */
+                overflow: hidden;
+}
+
+.rotating-text h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation: fadeText 12s infinite ease-out;
+}
+
+/* delays for each h1 */
+.rotating-text h1:nth-child(1) { animation-delay: 0s; }
+.rotating-text h1:nth-child(2) { animation-delay: 4s; }
+.rotating-text h1:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fadeText {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }   /* fade in */
+  30%  { opacity: 1; }   /* stay visible */
+  35%  { opacity: 0; }   /* fade out */
+  100% { opacity: 0; }
+}
+        }
+        // width: 50%;
+    }
+
+}
+    @media (max-width: 991px) {
+        .oneSection{
+            #navbarSupportedContent {
+            background: rgba(255, 255, 255, 0.195);
+            border-radius: 0.5rem;
+            }
+
+            .two{
+                            .rotating-text {
+                position: relative;
+                height: 100px; /* reserve space for one h1 */
+                overflow: hidden;
+}
+
+.rotating-text h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation: fadeText 12s infinite ease-out;
+}
+
+/* delays for each h1 */
+.rotating-text h1:nth-child(1) { animation-delay: 0s; }
+.rotating-text h1:nth-child(2) { animation-delay: 4s; }
+.rotating-text h1:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fadeText {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }   /* fade in */
+  30%  { opacity: 1; }   /* stay visible */
+  35%  { opacity: 0; }   /* fade out */
+  100% { opacity: 0; }
+}
+
+                .twoContent{
+                    h1{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+
+        }
+        
+}
+
+
+.sectionTwo{
+    .imgcontainer{
+        // img{
+        //     width: 100%;
+        //     height: auto;
+        // }
+        background-image: url('../images/left-intro.jpg');
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .twoContent{
+        background-image: url('../images/center-intro.jpg');
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+                    color: $fontColor;
+
+            .bodyTwo{
+                    h2{
+            font-family: $fontHeader;
+            font-size: 48px;
+            font-weight: 500;   
+           
+        }
+        span{
+            font-family: $fontSpecial;  
+            font-size: 18px;
+            line-height: 25px;
+        }
+        p{
+            font-family: $fontBody;
+            font-size: 15px;
+            line-height: 28px;
+        }
+        .sTwoBtn{
+                background-color: transparent;
+                color: $fontColor;
+                border: 2px solid $hoverColor;
+                padding: 10px 20px;
+                font-size: 13px;
+                font-weight: 400;
+                cursor: pointer;
+                font-family: $fontBody;
+            }
+            .sTwoBtn:hover{
+                background-color: $hoverColor;
+                transition: 1s;
+            }
+
+
+        }
+
+
+        }
+
+
+    }
+
+.sectionThree{
+    background-image:url('../images/bg_4.jpg'); 
+    height: 60vh;   
+    background-position: center;
+    background-size: cover;
+    color: white;
+    .meals{
+        h2{
+            font-family: $fontHeader;
+            font-size: 30px;
+        }
+        p{
+            font-family: $fontBody;
+            font-size: 15px;
+        }
+        // img:hover{
+        //     transform: scale(1.1);
+        //     transition: 0.5s;   
+        // }
+
+    }
+    .meals:hover{
+            box-shadow:10px 10px 20px #ffffffa0;
+            transition: 0.5s;
+            img{
+                transform: scale(1.1);
+                transition: 0.5s;   
+            }
+            
+        }
+        
+
+}
+@media (max-width: 991px) {
+    .sectionThree{
+        height: auto;
+        .meals{
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+
+
+.sectionFour {
+      color: $fontColor;
+    text-align: center;
+    .titleFour {
+    h2 {
+      font-family: $fontHeader;
+      font-size: 48px;
+    }
+    .dash {
+      display: flex;                /* turn into flex container */
+      align-items: center;          /* vertical centering */
+      justify-content: center;      /* center content */
+      font-family: $fontSpecial;
+      font-size: 18px;
+      gap: 15px;                    /* space between text and lines */
+    }
+    .dash::before,
+    .dash::after {
+      content: "";
+        height: 1px;
+        background-color: #ddd;
+        width: 50px;
+    }
+    p{
+        font-family: $fontBody;
+        font-size: 15px;
+        line-height: 28px;
+        width: 50%;
+    }
+  }
+
+}
+.sectionFour{
+        @media (max-width: 991px) {
+        p{
+            width: 100%;
+            background-color: turquoise;
+        }
+
+
+}
+}
+
+.sectionFive{
+    .starterbg{
+    background-image: url('../images/starterbg.jpg');
+    height: 20vh;
+    background-position: center;        
+    background-size: cover;
+    h2{
+        font-family: $fontHeader;
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+  }
+  .foodGallery {
+  .foodItem {
+    position: relative;
+    overflow: hidden; /* hide what's outside */
+
+    img {
+      width: 100%;
+      height: auto;   /* keep natural ratio */
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 100%;         /* start below the image */
+      left: 0;
+      width: 100%;
+      height: 100%;      /* exactly same size as image */
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: top 0.5s ease; /* animate vertical position */
+              color: rgba(255, 255, 255, 0.707);
+
+
+      h3 {
+        font-family: $fontHeader;
+        font-size: 24px;
+      }
+    }
+
+    &:hover .overlay {
+      top: 0; /* slide up fully to cover image */
+    }
+    .overlayTitle{
+        font-family: $fontHeader;
+        font-size: 30px;
+        color: white;
+        position:absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    &:hover .overlayTitle{
+        opacity: 0;
+  }
+
+
+
+  
+}
+
+
+
+// .foodGallery {
+//   .foodItem {
+//     position: relative;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//     }
+
+//     .overlay {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       display: flex;                 /* center content */
+//       justify-content: center;
+//       align-items: center;
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//       font-size: 50px;
+
+//       h3 {
+//         font-family: $fontHeader;
+//         font-size: 30px;
+//         color: white;
+//       }
+//     }
+
+//     // &:hover .overlay {
+//     //   opacity: 1; 
+//     // }
+//      .overlay:hover {
+//   height: 100%;  /* expand fully to match image */
+// }
+//   }
+// }
+
+}
+}
+.sectionSix{
+    .dishesbg{
+        background-image: url('../images/dishesbg.jpg');
+        height: 20vh;
+        background-position: center;        
+        background-size: cover;
+        h2{
+            font-family: $fontHeader;
+            font-size: 48px;
+            font-weight: 500;
+        }
+    }
+      .foodGallery {
+  .foodItem {
+    position: relative;
+    overflow: hidden; /* hide what's outside */
+
+    img {
+      width: 100%;
+      height: auto;   /* keep natural ratio */
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 100%;         /* start below the image */
+      left: 0;
+      width: 100%;
+      height: 100%;      /* exactly same size as image */
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: top 0.5s ease; /* animate vertical position */
+              color: rgba(255, 255, 255, 0.707);
+
+
+      h3 {
+        font-family: $fontHeader;
+        font-size: 24px;
+      }
+    }
+
+    &:hover .overlay {
+      top: 0; /* slide up fully to cover image */
+    }
+    .overlayTitle{
+        font-family: $fontHeader;
+        font-size: 30px;
+        color: white;
+        position:absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    &:hover .overlayTitle{
+        opacity: 0;
+  }
+}
+
+// .foodGallery {
+//   .foodItem {
+//     position: relative;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//     }
+
+//     .overlay {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       display: flex;                 /* center content */
+//       justify-content: center;
+//       align-items: center;
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//       font-size: 50px;
+
+//       h3 {
+//         font-family: $fontHeader;
+//         font-size: 30px;
+//         color: white;
+//       }
+//     }
+
+//     // &:hover .overlay {
+//     //   opacity: 1; 
+//     // }
+//      .overlay:hover {
+//   height: 100%;  /* expand fully to match image */
+// }
+//   }
+// }
+
+}
+
+}
+
+.sectionSeven{
+    .dessertbg{
+        background-image: url('../images/dessertbg.jpg');
+        height: 20vh;
+        background-position: center;        
+        background-size: cover;
+        h2{
+            font-family: $fontHeader;
+            font-size: 48px;
+            font-weight: 500;
+        }
+    }
+      .foodGallery {
+  .foodItem {
+    position: relative;
+    overflow: hidden; /* hide what's outside */
+
+    img {
+      width: 100%;
+      height: auto;   /* keep natural ratio */
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 100%;         /* start below the image */
+      left: 0;
+      width: 100%;
+      height: 100%;      /* exactly same size as image */
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: top 0.5s ease; /* animate vertical position */
+              color: rgba(255, 255, 255, 0.707);
+
+
+      h3 {
+        font-family: $fontHeader;
+        font-size: 24px;
+      }
+    }
+
+    &:hover .overlay {
+      top: 0; /* slide up fully to cover image */
+    }
+    .overlayTitle{
+        font-family: $fontHeader;
+        font-size: 30px;
+        color: white;
+        position:absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+    &:hover .overlayTitle{
+        opacity: 0;
+  }
+}
+
+// .foodGallery {
+//   .foodItem {
+//     position: relative;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//     }
+
+//     .overlay {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       display: flex;                 /* center content */
+//       justify-content: center;
+//       align-items: center;
+//       opacity: 0;
+//       transition: opacity 0.3s ease;
+//       font-size: 50px;
+
+//       h3 {
+//         font-family: $fontHeader;
+//         font-size: 30px;
+//         color: white;
+//       }
+//     }
+
+//     // &:hover .overlay {
+//     //   opacity: 1; 
+//     // }
+//      .overlay:hover {
+//   height: 100%;  /* expand fully to match image */
+// }
+//   }
+// }
+
+}
+
+}
+
+.sectionEight{
+    background-image: url('../images/reservationbg.jpg');
+    height: auto;   
+    background-position: center;
+    background-size: cover;
+    color: white;
+    .reservationHeader{
+        h2{
+            font-family: $fontHeader;
+            font-size: 48px;
+        }
+        p{
+            font-family: $fontBody;
+            font-size: 18px;
+        }
+            
+        }
+        .reservationForm{
+            input::placeholder,
+            textarea::placeholder,
+            input[type="date"]::placeholder{
+                font-family: $fontBody;
+                font-size: 13px;
+                color: white;
+                opacity: 1; /* make sure placeholder is fully opaque */
+            }
+            input:hover,input:active,input:focus,
+            textarea:hover,textarea:active,textarea:focus{
+                border: 2px solid $hoverColor;
+                transition: 1s;
+                box-shadow: #c59d5f70 0px 5px 15px;
+            }
+            input{
+                color: white;
+
+            }
+
+            button{
+                background-color: transparent;
+                color: white;
+                border: 2px solid $hoverColor;
+                padding: 10px 20px;
+                font-size: 13px;
+                font-weight: 400;
+                cursor: pointer;
+                font-family: $fontBody;
+                a{text-decoration: none; color: white;}
+            }
+            button:hover{
+                background-color: $hoverColor;
+                transition: 1s;
+            }
+
+        }
+        
+    }
+.sectionNine{
+    background-color: #191919;
+    color: #7a7a7a;
+    .footerContent{
+        padding:30px;
+            h3{
+        font-family: $fontHeader;
+        font-size: 24px;
+        color: white;
+        
+    }
+    // h3:hover{
+    //     color: $hoverColor;
+    //     transition: 1s;
+    // }
+    i:hover{
+        color: $hoverColor;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+
+    }
+    .footerContent:hover{
+        box-shadow: #262626 0px 5px 15px;
+        h3{
+            color: $hoverColor;
+            transition: 1s;
+        }
+        i{
+            color: $hoverColor;
+            // font-size: 20px;
+            transition: 1s;}
+    }
+}
+    .footerB{
+        background-color: #101010;
+    }
+
+    .scrollBtn{
+        .btnScroll{
+                    position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none; /* hidden by default */
+        z-index: 1000; /* ensure it appears above other content */
+
+
+        }
+    }

@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* adjust to navbar height */
+}
+
+.oneSection {
+  background-image: url("../images/bg_17.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  /* Default (at top) */
+}
+.oneSection #mainNavbar {
+  transition: all 0.3s ease;
+  /* When scrolled */
+}
+.oneSection .navbar-scrolled {
+  background-color: rgba(38, 38, 38, 0.862745098); /* white background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.664);
+  transition: all 0.3s ease;
+}
+.oneSection .navbar-toggler {
+  background-color: transparent;
+  border: 1px solid #ddd; /* optional border */
+}
+.oneSection .one .navList ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.oneSection .one .navList ul li a:hover {
+  color: #c59d5f;
+  transition: 1s;
+}
+.oneSection .two {
+  min-height: 70vh;
+}
+.oneSection .two .twoContent {
+  /* delays for each h1 */
+}
+.oneSection .two .twoContent h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: white !important;
+}
+.oneSection .two .twoContent p {
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 5px;
+  line-height: 28px;
+}
+.oneSection .two .twoContent .btnTwo {
+  background-color: transparent;
+  border: 2px solid #c59d5f;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.oneSection .two .twoContent .btnTwo a {
+  text-decoration: none;
+  color: #c59d5f;
+}
+.oneSection .two .twoContent .btnTwo:hover {
+  background-color: #c59d5f;
+  color: white;
+  transition: 1s;
+}
+.oneSection .two .twoContent .btnTwo:hover a {
+  color: white;
+}
+.oneSection .two .twoContent .rotating-text {
+  position: relative;
+  height: 100px; /* reserve space for one h1 */
+  overflow: hidden;
+}
+.oneSection .two .twoContent .rotating-text h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation: fadeText 12s infinite ease-out;
+}
+.oneSection .two .twoContent .rotating-text h1:nth-child(1) {
+  animation-delay: 0s;
+}
+.oneSection .two .twoContent .rotating-text h1:nth-child(2) {
+  animation-delay: 4s;
+}
+.oneSection .two .twoContent .rotating-text h1:nth-child(3) {
+  animation-delay: 8s;
+}
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  } /* fade in */
+  30% {
+    opacity: 1;
+  } /* stay visible */
+  35% {
+    opacity: 0;
+  } /* fade out */
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .oneSection #navbarSupportedContent {
+    background: rgba(255, 255, 255, 0.195);
+    border-radius: 0.5rem;
+  }
+  .oneSection .two {
+    /* delays for each h1 */
+  }
+  .oneSection .two .rotating-text {
+    position: relative;
+    height: 100px; /* reserve space for one h1 */
+    overflow: hidden;
+  }
+  .oneSection .two .rotating-text h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation: fadeText 12s infinite ease-out;
+  }
+  .oneSection .two .rotating-text h1:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .oneSection .two .rotating-text h1:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .oneSection .two .rotating-text h1:nth-child(3) {
+    animation-delay: 8s;
+  }
+  @keyframes fadeText {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    } /* fade in */
+    30% {
+      opacity: 1;
+    } /* stay visible */
+    35% {
+      opacity: 0;
+    } /* fade out */
+    100% {
+      opacity: 0;
+    }
+  }
+  .oneSection .two .twoContent h1 {
+    font-size: 30px;
+  }
+  .oneSection .two .twoContent p {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+.sectionTwo .imgcontainer {
+  background-image: url("../images/left-intro.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+.sectionTwo .twoContent {
+  background-image: url("../images/center-intro.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  color: #262626;
+}
+.sectionTwo .twoContent .bodyTwo h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sectionTwo .twoContent .bodyTwo span {
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+  line-height: 25px;
+}
+.sectionTwo .twoContent .bodyTwo p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+}
+.sectionTwo .twoContent .bodyTwo .sTwoBtn {
+  background-color: transparent;
+  color: #262626;
+  border: 2px solid #c59d5f;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.sectionTwo .twoContent .bodyTwo .sTwoBtn:hover {
+  background-color: #c59d5f;
+  transition: 1s;
+}
+
+.sectionThree {
+  background-image: url("../images/bg_4.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.sectionThree .meals h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+}
+.sectionThree .meals p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.sectionThree .meals:hover {
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.6274509804);
+  transition: 0.5s;
+}
+.sectionThree .meals:hover img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .sectionThree {
+    height: auto;
+  }
+  .sectionThree .meals {
+    margin-bottom: 20px;
+  }
+}
+.sectionFour {
+  color: #262626;
+  text-align: center;
+}
+.sectionFour .titleFour h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+}
+.sectionFour .titleFour .dash {
+  display: flex; /* turn into flex container */
+  align-items: center; /* vertical centering */
+  justify-content: center; /* center content */
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+  gap: 15px; /* space between text and lines */
+}
+.sectionFour .titleFour .dash::before,
+.sectionFour .titleFour .dash::after {
+  content: "";
+  height: 1px;
+  background-color: #ddd;
+  width: 50px;
+}
+.sectionFour .titleFour p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .sectionFour p {
+    width: 100%;
+    background-color: turquoise;
+  }
+}
+
+.sectionFive .starterbg {
+  background-image: url("../images/starterbg.jpg");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+}
+.sectionFive .starterbg h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sectionFive .foodGallery .foodItem {
+  position: relative;
+  overflow: hidden; /* hide what's outside */
+}
+.sectionFive .foodGallery .foodItem img {
+  width: 100%;
+  height: auto; /* keep natural ratio */
+  display: block;
+}
+.sectionFive .foodGallery .foodItem .overlay {
+  position: absolute;
+  top: 100%; /* start below the image */
+  left: 0;
+  width: 100%;
+  height: 100%; /* exactly same size as image */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease; /* animate vertical position */
+  color: rgba(255, 255, 255, 0.707);
+}
+.sectionFive .foodGallery .foodItem .overlay h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24px;
+}
+.sectionFive .foodGallery .foodItem:hover .overlay {
+  top: 0; /* slide up fully to cover image */
+}
+.sectionFive .foodGallery .foodItem .overlayTitle {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.sectionFive .foodGallery .foodItem:hover .overlayTitle {
+  opacity: 0;
+}
+
+.sectionSix .dishesbg {
+  background-image: url("../images/dishesbg.jpg");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+}
+.sectionSix .dishesbg h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sectionSix .foodGallery .foodItem {
+  position: relative;
+  overflow: hidden; /* hide what's outside */
+}
+.sectionSix .foodGallery .foodItem img {
+  width: 100%;
+  height: auto; /* keep natural ratio */
+  display: block;
+}
+.sectionSix .foodGallery .foodItem .overlay {
+  position: absolute;
+  top: 100%; /* start below the image */
+  left: 0;
+  width: 100%;
+  height: 100%; /* exactly same size as image */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease; /* animate vertical position */
+  color: rgba(255, 255, 255, 0.707);
+}
+.sectionSix .foodGallery .foodItem .overlay h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24px;
+}
+.sectionSix .foodGallery .foodItem:hover .overlay {
+  top: 0; /* slide up fully to cover image */
+}
+.sectionSix .foodGallery .foodItem .overlayTitle {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.sectionSix .foodGallery .foodItem:hover .overlayTitle {
+  opacity: 0;
+}
+
+.sectionSeven .dessertbg {
+  background-image: url("../images/dessertbg.jpg");
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+}
+.sectionSeven .dessertbg h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+.sectionSeven .foodGallery .foodItem {
+  position: relative;
+  overflow: hidden; /* hide what's outside */
+}
+.sectionSeven .foodGallery .foodItem img {
+  width: 100%;
+  height: auto; /* keep natural ratio */
+  display: block;
+}
+.sectionSeven .foodGallery .foodItem .overlay {
+  position: absolute;
+  top: 100%; /* start below the image */
+  left: 0;
+  width: 100%;
+  height: 100%; /* exactly same size as image */
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.5s ease; /* animate vertical position */
+  color: rgba(255, 255, 255, 0.707);
+}
+.sectionSeven .foodGallery .foodItem .overlay h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24px;
+}
+.sectionSeven .foodGallery .foodItem:hover .overlay {
+  top: 0; /* slide up fully to cover image */
+}
+.sectionSeven .foodGallery .foodItem .overlayTitle {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.sectionSeven .foodGallery .foodItem:hover .overlayTitle {
+  opacity: 0;
+}
+
+.sectionEight {
+  background-image: url("../images/reservationbg.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.sectionEight .reservationHeader h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 48px;
+}
+.sectionEight .reservationHeader p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.sectionEight .reservationForm input::-moz-placeholder, .sectionEight .reservationForm textarea::-moz-placeholder, .sectionEight .reservationForm input[type=date]::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: white;
+  opacity: 1; /* make sure placeholder is fully opaque */
+}
+.sectionEight .reservationForm input::placeholder,
+.sectionEight .reservationForm textarea::placeholder,
+.sectionEight .reservationForm input[type=date]::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: white;
+  opacity: 1; /* make sure placeholder is fully opaque */
+}
+.sectionEight .reservationForm input:hover, .sectionEight .reservationForm input:active, .sectionEight .reservationForm input:focus,
+.sectionEight .reservationForm textarea:hover, .sectionEight .reservationForm textarea:active, .sectionEight .reservationForm textarea:focus {
+  border: 2px solid #c59d5f;
+  transition: 1s;
+  box-shadow: rgba(197, 157, 95, 0.4392156863) 0px 5px 15px;
+}
+.sectionEight .reservationForm input {
+  color: white;
+}
+.sectionEight .reservationForm button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #c59d5f;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+.sectionEight .reservationForm button a {
+  text-decoration: none;
+  color: white;
+}
+.sectionEight .reservationForm button:hover {
+  background-color: #c59d5f;
+  transition: 1s;
+}
+
+.sectionNine {
+  background-color: #191919;
+  color: #7a7a7a;
+}
+.sectionNine .footerContent {
+  padding: 30px;
+}
+.sectionNine .footerContent h3 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.sectionNine .footerContent i:hover {
+  color: #c59d5f;
+  font-size: 20px;
+  transition: 1s;
+}
+.sectionNine .footerContent:hover {
+  box-shadow: #262626 0px 5px 15px;
+}
+.sectionNine .footerContent:hover h3 {
+  color: #c59d5f;
+  transition: 1s;
+}
+.sectionNine .footerContent:hover i {
+  color: #c59d5f;
+  transition: 1s;
+}
+
+.footerB {
+  background-color: #101010;
+}
+
+.scrollBtn .btnScroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* hidden by default */
+  z-index: 1000; /* ensure it appears above other content */
+}/*# sourceMappingURL=style.css.map */
